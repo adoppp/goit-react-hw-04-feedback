@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import css from './Feedback.module.css';
 import { nanoid } from 'nanoid';
 
-export const FeedbackOptions = ({ options, onLeaveFeedback, index }) => {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+    console.log(options)
     return (
         <div>
             {options.map(option => {
